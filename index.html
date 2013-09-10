@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Вопрос 1</h3>",
+        answers: [
+            "Ответ 1",
+            "Ответ 2",
+            "Ответ 3"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>Вопрос 2</h3>",
+        answers: [
+            "Ответ 1",
+            "Ответ 2",
+            "Ответ 3"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>Вопрос 3</h3>",
+        answers: [
+            "Ответ 1",
+            "Ответ 2",
+            "Ответ 3"
+        ],
+        correct: [3]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Тест</h3>
+        <button class="btn btn-large">Старт</button>
+    </div>
+</body>
+</html>
